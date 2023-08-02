@@ -1,8 +1,7 @@
 # Todo App
 
 Et eksempel for hvordan en Todo applikasjon kan bli brutt ned til mindre biter.
-her har vi stykket det opp i en tilstand som må taes vare på.
-Og et sett med funksjoner som endrer på den.
+Her har vi stykket det opp i en tilstand som må taes vare på, og et sett med funksjoner for å støtte opp rundt funksjonalitet vi har i designet vårt.
 
 ## Breakdown
 
