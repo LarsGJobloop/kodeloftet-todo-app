@@ -1,5 +1,9 @@
 # Todo App
 
+Et eksempel for hvordan en Todo applikasjon kan bli brutt ned til mindre biter.
+her har vi stykket det opp i en tilstand som må taes vare på.
+Og et sett med funksjoner som endrer på den.
+
 ## Breakdown
 
 ![Breakdown of the todo application](./docs/overview.png)
