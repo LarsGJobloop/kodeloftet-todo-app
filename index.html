@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi Form Handling</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script defer src="main.js"></script>
+</head>
+<body>
+
+  <!-- Form Element -->
+  <form id="add-todo-form">
+    <!-- label med input element -->
+    <label for="task">Task</label>
+    <input type="text" name="task" id="form-task">
+
+    <label for="assignedTo">Assigned to</label>
+    <input type="text" name="assignedTo" id="form-assignedTo">
+
+    <!-- Submit knapp -->
+    <button type="submit">Add</button>
+  </form>
+
+  <h2>List of tasks</h2>
+  <ul class="todo-list" id="todos">
+
+    <li class="todo-card">
+      <!-- Hva er gjøremålet -->
+      <h3>Feed sharks</h3>
+      <!-- Hvem skal gjøre det -->
+      <p>Lars</p>
+    </li>
+
+    <li class="todo-card completed">
+      <!-- Hva er gjøremålet -->
+      <h3>Feed sharks</h3>
+      <!-- Hvem skal gjøre det -->
+      <p>Lars</p>
+    </li>
+    
+  </ul>
+</body>
+</html>
