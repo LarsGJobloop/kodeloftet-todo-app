@@ -14,15 +14,8 @@ formElement.addEventListener(
     // lagrer vi form elementet i en navngitt variabel her
     const form = event.target
     
-    // Finn elementet
-    const taskInput = document.getElementById("form-task")
-    const assignedInput = document.getElementById("form-assignedTo")
-
     // lagre verdien i data objektet vårt
-    const data = {
-      task: taskInput.value,
-      assignedTo: assignedInput.value
-    }
+    const data = parseFormData(form)
 
     // Nullstill alle input elementen formen
     form.reset()
@@ -64,4 +57,36 @@ function createTodoCard(todoData) {
 
   // Sett hele kortet inn i DOM / dokumentet
   todoListRoot.appendChild(todoCard)
+}
+
+/**
+ * Takes a form element and constructs a object
+ * containing the keyes and values of all input
+ * elements
+ * 
+ * @example
+ * 
+ * <body>
+ *  <form id="login-form">
+ *  </form>
+ * </body>
+ * const formElement = document.querySelector("login-form")
+ * const formData = parseFormData(formElement)
+ * console.dir(formData)
+ * 
+ * @param {HTMLFormElement} formElement 
+ * @returns
+ */
+function parseFormData(formElement) {
+  const rawFormData = new FormData(formElement)
+
+  let parsedData = {}
+
+  rawFormData.forEach(
+    (value, key) => {
+      parsedData[key] = value
+    }
+  )
+
+  return parsedData
 }
